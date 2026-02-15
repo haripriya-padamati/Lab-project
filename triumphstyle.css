@@ -1,0 +1,189 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: "Bagel Fat One", system-ui;
+}
+.body {
+  background: #01162B;
+  color: #6A90B4;
+  background-attachment: fixed;
+}
+.topnav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background:none;
+  position: sticky;
+  top: 0;
+  padding: 20px 60px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float:inline-end;
+  color: #D2DBEB;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  letter-spacing: 1px;
+}
+.topnav ul{
+  display: flex;
+  list-style: none;
+}
+.topnav ul li {
+  margin-left: 25px;
+}
+.topnav ul li a{
+  text-decoration: none;
+  color: #D2DBEB;
+  font-weight: 600;
+}
+.topnav ul li a:hover{
+  color: #6A90B4;
+}
+
+.topnav a.title{
+  float:inline-start;
+  font-size: 40px;
+  color: #ff6b6b;
+  background-image: linear-gradient(90deg, #D2DBEB 0%, #6A90B4 50%,#D2DBEB 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 2px;
+  margin-top: -15px;
+  margin-left: -40px;
+}
+
+.topnav a:hover {
+  color: #6A90B4;
+}
+.content{
+  margin-left: 150px;
+  color:#D2DBEB
+}
+.content div.center{
+  margin-top: 250px;
+  margin-bottom: 250px;
+  color: #D2DBEB;
+  background-image: linear-gradient(90deg, #D2DBEB 0%, #6A90B4 50%,#D2DBEB 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.content div.todo{
+  width:500px;
+  height:500px;
+  margin:20px;
+}
+.content div.projectsss{
+  margin:20px;
+  width:500px;
+  height:700px;
+}
+.home{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 90vh;
+  padding: 60px;
+}
+.home-text h1{
+  font-size: 48px;
+  background: linear-gradient(#D2DBEB,#6A90B4,#D2DBEB);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.home-text h4{
+  margin: 10px 0px;
+  color:#6A90B4;
+  letter-spacing: 1px;
+}
+.home-text p{
+  margin-bottom: 25px;
+}
+.btn{
+  padding: 12px 25px;
+  background: linear-gradient(90deg,#6A90B4, #D2DBEB, #6A90B4 );
+  color: #01162B;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.btn:hover{
+  background: linear-gradient(90deg, #01162B, #6A90B4, #01162B);
+  color:#D2DBEB
+}
+.home-img img{
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid transparent;
+}
+section{
+  padding: 80px 60px;
+}
+section h2{
+  font-size: 32px;
+  margin-bottom: 25px;
+  color: #D2DBEB;
+  letter-spacing: 1px;
+}
+#about p{
+  max-width: 700px;
+  font-size:18px;
+  line-height: 1.6;
+}
+.skills{
+  display: flex;
+  flex-wrap: wrap;
+}
+.skills span{
+  margin: 10px;
+  padding: 12px 18px;
+  border-radius: 20px;
+  background: linear-gradient(90deg, #D2DBEB, #6A90B4);
+  border: 1px solid #01162B;
+  color:#01162B;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+.project{
+  background: linear-gradient(90deg, #01162B, #6A90B4, #01162B);
+  padding:20px;
+  margin:15px 0;
+  border-left: 5px solid #01162B;
+  border-radius: 10px;
+}
+.project h3{
+  color: #D2DBEB;
+}
+#contact a{
+  color:#6A90B4;
+  text-decoration: none;
+}
+#contact a:hover{
+  color:#D2DBEB;
+}
+footer{
+  text-align: center;
+  padding:25px;
+  margin-top: 340px;
+  color:#D2DBEB;
+}
+@media(max-width:900px){
+  .home{
+    flex-direction: column;
+    text-align: center;
+  }
+  nav{
+    flex-direction: column;
+  }
+  nav ul{
+    margin-top:15px;
+  }
+}
