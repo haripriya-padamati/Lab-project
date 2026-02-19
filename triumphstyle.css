@@ -93,7 +93,7 @@
 }
 .home-text h1{
   font-size: 48px;
-  background: linear-gradient(#D2DBEB,#6A90B4,#D2DBEB);
+  background: linear-gradient(90deg,#D2DBEB,#6A90B4,#D2DBEB);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -162,17 +162,24 @@ section h2{
 .project h3{
   color: #D2DBEB;
 }
-#contact a{
-  color:#6A90B4;
+.ongoingp a{
+  display: block;
+  border-radius: 30%;
+  background-color: #6A90B4;
+  width:150px;
+  height:50px;
+  margin:20px;
+  padding:10px;
+  color:#01162B;
   text-decoration: none;
 }
-#contact a:hover{
+.ongoingp a:hover{
   color:#D2DBEB;
 }
 footer{
   text-align: center;
   padding:25px;
-  margin-top: 340px;
+  margin-top: 150px;
   color:#D2DBEB;
 }
 @media(max-width:900px){
