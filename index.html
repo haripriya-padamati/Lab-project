@@ -1,79 +1,71 @@
 <!doctype html>
-<html>
-    <head>
-        <title>Triumph</title>
-        <link rel="stylesheet" href="triumphstyle.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap" rel="stylesheet">
-    </head>
-    <body class="body">
-        <div class="topnav">
-            <ul>
-            <li><a class="title" href="index.html">Triumph</a></li>
-            <li><a class="active" href="index.html">Dashboard</a></li>
-            <li><a class="notactive" href="#about">About</a></li>
-            <li><a class="notactive" href="#skills">Skills</a></li>
-            <li><a class="notactive" href="#projects">Projects</a></li>
-            <li><a class="notactive" href="#On-going">On-going</a></li>
-            </ul>
-        </div>
-        <div class="home" id="home">
-            <div class="home-text">
-            <h1>Hey Haripriya Padamati!</h1>
-            <h4>How has today been so far?</h4>
-            <p>current projects you have been working on</p>
-            <a href="#contact" class="btn">On-going project</a>
-            </div>
-            <div class="home-img">
-                <img src="image.jpg" alt="Haripriya">
-            </div>
-        </div>
-        <section id="about">
-            <h2>About Me</h2>
-            <p> I am a B-Tech 2nd Year Student studying at vit and so on.
-                I am a B-Tech 2nd Year Student studying at vit and so on.
-                I am a B-Tech 2nd Year Student studying at vit and so on.
-                I am a B-Tech 2nd Year Student studying at vit and so on.</p>
-        </section>
-        <section id="skills">
-            <h2>Skills</h2>
-            <div class="skills">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JAVASCRIPT</span>
-                <span>SQL</span>
-                <span>C programming</span>
-            </div>
-        </section>
-        <section id="projects">
-            <h2>Projects</h2>
-            <div class="projects">
-                <h3>personal portfolio website</h3>
-                <p> about project.about project.about project.about project.about project.about project.about project</p>
-            </div>
-            <div class="projects">
-                <h3>personal portfolio website</h3>
-                <p> about project.about project.about project.about project.about project.about project.about project</p>
-            </div>
-            <div class="projects">
-                <h3>personal portfolio website</h3>
-                <p> about project.about project.about project.about project.about project.about project.about project</p>
-            </div>
-        </section>
-        <section id="On-going">
-            <h2>Currently working on:</h2>
-            <div class="ongoingp">
-                <a href="#On-going">project 1</a>
-                <a href="#On-going">project 2</a>
-                <a href="#On-going">project 3</a>
-                <a href="#On-going">project 4</a>
-                <a href="#On-going">project 5</a>
-                <a href="#On-going">project 6</a>
-            </div>
-        </section>
-        <footer>
-            2026 Haripriya Padamati | All rights reserved
-        </footer>
-    </body>
+<html lang="en">
+<head>
+  <title>Triumph</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="triumphstyle.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <a class="logo" href="#home">Triumph</a>
+  <ul>
+    <li><a href="#home" class="active">Dashboard</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#ongoing">On-going</a></li>
+  </ul>
+</nav>
+
+<div class="home" id="home">
+  <div class="home-text">
+    <h1>Hey Haripriya Padamati!</h1>
+    <h4>How has today been so far? </h4>
+    <p>Here's a snapshot of everything you're building.</p>
+    <a href="#ongoing" class="btn">View On-going Projects</a>
+  </div>
+  <div class="home-img">
+    <img src="image.jpg" alt="Haripriya"
+      onerror="this.src='https://ui-avatars.com/api/?name=Haripriya+Padamati&size=280&background=6A90B4&color=01162B&font-size=0.33'">
+  </div>
+</div>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p>I am a B-Tech 2nd Year Student studying at VIT, passionate about building things that matter. I love turning ideas into real, working products — from clean UIs to backend logic that actually holds up.</p>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills">
+    <span>HTML</span><span>CSS</span><span>JavaScript</span><span>SQL</span><span>C Programming</span>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="cards-grid" id="finished-grid"></div>
+</section>
+
+<section id="ongoing">
+  <h2>Currently Working On</h2>
+  <div class="cards-grid" id="ongoing-grid"></div>
+</section>
+
+<footer>© 2026 Haripriya Padamati | All rights reserved</footer>
+
+<div class="panel" id="main-panel">
+  <div class="panel-header">
+    <button class="panel-back" id="panel-back">← Back</button>
+    <span class="panel-title" id="panel-title"></span>
+    <span class="panel-status" id="panel-status"></span>
+  </div>
+  <div class="panel-body" id="panel-body"></div>
+</div>
+
+<script src="triumphscript.js"></script>
+</body>
 </html>
